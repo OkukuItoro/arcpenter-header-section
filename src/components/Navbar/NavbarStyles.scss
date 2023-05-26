@@ -1,0 +1,28 @@
+.navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 12;
+  padding-inline: 8rem;
+
+  &__logo {
+    height: 2rem;
+  }
+
+  &__items {
+    list-style: none;
+    display: flex;
+
+    &--link {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}

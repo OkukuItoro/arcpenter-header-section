@@ -1,0 +1,86 @@
+/***** LAYOUT *****/
+.hero {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  /* HERO LEFT SECTION */
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding-left: 8rem;
+    margin-bottom: 3rem;
+    width: 50%;
+
+    &--heading-box {
+      padding: 0.2rem;
+    }
+
+    &--description-box {
+      padding: 0.5rem;
+      width: 90%;
+      margin: 0.5rem 0 1rem 1rem;
+    }
+
+    &--btns {
+      padding: 0.4rem;
+
+      & :last-child {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  /* HERO RIGHT SECTION */
+  &__right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/***** TYPOGRAPHY & BUTTONS *****/
+/* HEADING TEXT */
+.text-heading {
+  &__main {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  &__sub {
+    display: block;
+  }
+
+  &__highlighted {
+    color: var(--color-hero-span);
+  }
+}
+
+/* DESCRIPTION TEXT */
+.text-description {
+  font-size: 0.9rem;
+}
+
+/* BUTTONS */
+.button {
+  background: var(--color-btn);
+  color: white;
+  width: 9rem;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-0.1rem);
+  }
+}
+.btn-white {
+  color: var(--color-btn);
+  background: white;
+  border: 1px solid var(--color-btn);
+}

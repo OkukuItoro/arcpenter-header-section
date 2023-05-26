@@ -1,0 +1,35 @@
+.wheel-container {
+  width: 55%;
+}
+
+/* The wheel containing the polygons */
+.wheel {
+  position: relative;
+  height: 18rem;
+  width: 90%;
+  border-radius: 50%;
+  border: 3.2rem solid var(--color-btn);
+  background: transparent;
+  transform: scale(2.3);
+  left: 26rem;
+  top: 3rem;
+}
+
+/* Rotation Keyframes */
+@keyframes rotateWheel {
+  0% {
+    transform: rotate(0deg) scale(2.3);
+  }
+  20% {
+    transform: rotate(10deg) scale(2.3);
+  }
+  100% {
+    transform: rotate(-90deg) scale(2.3);
+  }
+}
+
+/* Animation */
+.animate-wheel {
+  animation: rotateWheel 1.5s ease;
+  backface-visibility: hidden;
+}
